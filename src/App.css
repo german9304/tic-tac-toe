@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+.App {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1em;
+}
+
+.steps-title {
+  padding: 0;
+  margin-bottom: 1em;
+  margin-top: 0;
+  font-size: 1em;
+}
+
+.steps .step-btn {
+  border: solid 1px gray;
+  padding: 1em;
+  border-radius: 20%;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.game {
+  /* border: solid 1px black; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1em;
+}
+.AppHeader {
+  text-align: center;
+  /* border: solid 1px red; */
+}
+
+.board {
+  width: 400px;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.number {
+  height: 100px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.number .show {
+  display: block;
+}
+
+.number span {
+  font-size: 4em;
+}
+
+.number .hide {
+  display: none;
+}
+
+.lose {
+  border: solid 1px black;
+}
+.winner {
+  border: solid 3px #ff4136;
+}
+
+.clear-game button[class="clear-btn"] {
+  margin-bottom: 1em;
+  padding: 0.8em;
+}
